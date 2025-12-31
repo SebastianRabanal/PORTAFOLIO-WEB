@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sebastian Rabanal | Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b411453886.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">&lt;Sebastian_Dev&gt;</div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio"" onclick="closeMenu()">Inicio</a></li>
+                <li><a href="#proyectos"" onclick="closeMenu()">Proyectos</a></li>
+                <li><a href="#sobre-mi"" onclick="closeMenu()">Sobre Mí</a></li>
+                <li><a href="#Tecnologias"" onclick="closeMenu()">Tecnologias</a></li>
+                <li><a href="#contacto"" onclick="closeMenu()">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <div class="hero-image">
+                <img src="images/foto profile 2.jpeg" alt="Foto de perfil" class="profile-pic">
+            </div>
+            <div class="hero-text">
+                <h1>Hola, soy Sebastian Rabanal</h1>
+                <h2>Ing. de Sistemas</h2>
+                <p>Estudiante de Ingeniería de Sistemas apasionado 
+                    por el desarrollo de software. Conocimientos en 
+                    Python, SQL Server, Desarrollo Web. 
+                    Me enfoco en escribir código limpio y disfruto resolviendo problemas lógicos. 
+                    Busco oportunidades para aplicar mis conocimientos en proyectos 
+                    reales y seguir creciendo profesionalmente.</p>
+                <div class="social-links">
+                    <a href="https://github.com/SebastianRabanal" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/sebastianrabanalfrancia/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/sebastianrodrigorabanalfrancia/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos" class="projects">
+        <h2 class="section-title">Mis Proyectos</h2>
+
+        <div class="projects-slider-wrapper">
+
+            <button class="slider-arrow prev" aria-label="Anterior">&#10094;</button>
+
+            <div class="projects-viewport">
+                <div class="projects-track" id="projectTrack">
+
+                    <div class="project-card">
+                        <img src="images/La chica del clima dashboard.png" alt="Proyecto 1" class="project-image">
+                        <div class="project-content">
+                            <h3 class="project-title">La Chica del Clima - Dashboard</h3>
+                            <p class="project-description">Panel de control de calidad de aire de distintas zonas.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/SebastianRabanal/Hackaton---Dashboard-Datos-Clima-" target="_blank" class="project-link"><i class="fab fa-github"></i> Code</a>
+                                <a href="https://hackaton-dashboard-datos-clima.onrender.com/" class="project-link demo-btn" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> DEMO
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" alt="Proyecto 2" class="project-image">
+                        <div class="project-content">
+                            <h3 class="project-title">Analytics App</h3>
+                            <p class="project-description">Gráficos interactivos en tiempo real.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop" alt="Proyecto 3" class="project-image">
+                        <div class="project-content">
+                            <h3 class="project-title">Portafolio</h3>
+                            <p class="project-description">Diseño minimalista y responsive.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">HTML</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1555099962-4199c345e5dd?w=600&h=400&fit=crop" alt="Proyecto 4" class="project-image">
+                        <div class="project-content">
+                            <h3 class="project-title">E-Commerce</h3>
+                            <p class="project-description">Tienda virtual con carrito de compras.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Django</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <button class="slider-arrow next" aria-label="Siguiente">&#10095;</button>
+        </div>
+    </section>
+
+    <section id="sobre-mi" class="about">
+        <h2 class="section-title">Sobre Mí</h2>
+        <p>Soy un desarrollador apasionado por la tecnología y el aprendizaje continuo. Aunque actualmente estoy
+            iniciando mi carrera profesional, dedico mi tiempo a crear proyectos que me permiten explorar nuevas
+            tecnologías y mejorar mis habilidades.</p>
+        <p>Me enfoco en escribir código limpio, crear interfaces intuitivas y aprender de cada proyecto que desarrollo.
+        </p>
+    </section>
+
+    <section id="tecnologias" class="technologies">
+        <h2 class="section-title" id="Tecnologias">Tecnologias</h2>
+        <div class="tech-slider-wrapper">
+        <div class="infinite-slider-container">
+            <div class="infinite-slider-track" id="sliderTrack">
+                <div class="slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" draggable="false"></div>
+                <div class="slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" alt="SQL Server" draggable="false"></div>
+                <div class="slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" draggable="false"></div>
+                <div class="slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" draggable="false"></div>
+                <div class="slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" draggable="false"></div>
+                <div class="slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" draggable="false"></div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact">
+        <h2 class="section-title">¿Trabajemos Juntos?</h2>
+        <p>Estoy disponible para proyectos freelance, colaboraciones o simplemente para conversar sobre tecnología.</p>
+        <a href="mailto:sebastianrabanal34@gmail.com" class="contact-btn">
+            <i class="fas fa-envelope"></i>
+            Envíame un mensaje
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Sebastian Rabanal. Desarrollado con pasión y café ☕</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
