@@ -248,3 +248,53 @@ document.addEventListener('DOMContentLoaded', function() {
         window.addEventListener('resize', updateCarousel);
     }
 });
+
+// =========================================
+// 5. SISTEMA DE MODALES (CV y Certificaciones)
+// =========================================
+
+function openModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden'; // Bloquea el scroll
+    } else {
+        console.error(`Error: No se encontró el modal con ID "${modalId}". Verifica tu HTML.`);
+    }
+}
+
+function closeModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = 'auto'; // Reactiva el scroll
+    }
+}
+
+// Función para abrir la imagen en grande (Lightbox)
+function openImage(imageSrc, captionText) {
+    const fullImage = document.getElementById('fullImage');
+    const caption = document.getElementById('imageCaption');
+
+    if (fullImage && caption) {
+        fullImage.src = imageSrc;
+        caption.textContent = captionText;
+        openModal('modalImageViewer');
+    }
+}
+
+// Cerrar al hacer clic fuera (en el fondo oscuro)
+window.addEventListener('click', function(event) {
+    if (event.target.classList.contains('modal')) {
+        closeModal(event.target.id);
+    }
+});
+
+// Cerrar con tecla ESC
+window.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        document.querySelectorAll('.modal.active').forEach(modal => {
+            closeModal(modal.id);
+        });
+    }
+});

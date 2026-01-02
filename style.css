@@ -39,35 +39,6 @@ nav {
     align-items: center;
 }
 
-/*PARA EL IDIOMA*/
-
-.lang-btn {
-    background: transparent;
-    border: 1px solid var(--accent);
-    color: var(--accent);
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    cursor: pointer;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    transition: all 0.3s ease;
-    margin-right: 1rem; /* Separación del menú hamburguesa en móvil */
-}
-
-.lang-btn:hover {
-    background: var(--accent);
-    color: var(--bg-primary);
-    box-shadow: 0 0 15px rgba(0, 255, 136, 0.4);
-}
-
-@media (max-width: 768px) {
-    .lang-btn {
-        margin-left: auto; /* Empuja el botón a la derecha cerca del menú */
-    }
-}
-
 /* LOGO*/
 
 .logo {
@@ -354,20 +325,318 @@ nav {
 }
 
 .about {
-    padding-top: 30px;
-    padding-bottom: 50px;
-    max-width: 800px;
+    /* Quitamos el text-align center global de la sección anterior */
+    text-align: left; 
+    padding-top: 60px;
+    padding-bottom: 60px;
+    max-width: 1200px; /* Aumentamos el ancho para que quepan las 2 columnas */
     margin: 0 auto;
-    text-align: center;
     border-top: 1px solid var(--border);
 }
 
-.about p {
+.bio-text p {
     color: var(--text-secondary);
     font-size: 1.1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+    text-align: justify;      /* Justificado como pediste */
+    text-justify: inter-word; /* Mejora la distribución de espacios */
 }
 
+.about-split-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr; /* Izquierda más ancha (texto), Derecha más angosta */
+    gap: 4rem;
+    align-items: center; /* Centrado verticalmente */
+    padding: 0 2rem;
+}
+
+/* CURSOS Y CERTIFICACIONES */
+.section-title-left {
+    font-size: 2.5rem;
+    color: var(--accent);
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+.bio-text p {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+    text-align: justify; /* Petición explícita */
+    text-justify: inter-word; /* Mejora el justificado evitando espacios gigantes */
+}
+
+/* --- COLUMNA DERECHA (Card) --- */
+.actions-card {
+    background: rgba(21, 21, 21, 0.6); /* Fondo semitransparente */
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    transition: transform 0.3s ease;
+}
+
+.actions-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-5px);
+}
+
+.actions-card h3 {
+    color: var(--text-primary);
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-subtitle {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 1rem;
+    display: block;
+}
+
+/* Estilo mejorado de los Botones Verticales */
+.action-buttons-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.action-btn.full-width {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Icono izq, texto centro, flecha der */
+    padding: 1rem;
+    background: var(--bg-primary);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+.action-btn.full-width:hover {
+    background: var(--accent);
+    color: var(--bg-primary);
+    border-color: var(--accent);
+    box-shadow: 0 0 15px rgba(0, 255, 136, 0.3);
+}
+
+/* Detalles internos del botón */
+.btn-icon {
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
+
+.btn-text {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-text span {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.btn-text small {
+    font-size: 0.75rem;
+    opacity: 0.8;
+    font-weight: normal;
+}
+
+.arrow-indicator {
+    font-size: 0.9rem;
+    opacity: 0; /* Oculta hasta hover */
+    transform: translateX(-10px);
+    transition: all 0.3s ease;
+}
+
+.action-btn.full-width:hover .arrow-indicator {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* =======================
+   ESTILOS DE MODALES
+   ======================= */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(5px);
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal.active {
+    display: flex;
+    opacity: 1;
+}
+
+.modal-content {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--accent);
+    width: 90%;
+    max-width: 800px;
+    max-height: 90vh;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 30px rgba(0, 255, 136, 0.15);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 10px;
+}
+
+.close-modal {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 2rem;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.close-modal:hover { color: var(--accent); }
+
+.pdf-viewer {
+    width: 100%;
+    height: 60vh;
+    border: none;
+    background: #fff;
+    border-radius: 5px;
+}
+
+/* Grid de Certificados */
+.certs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+    overflow-y: auto;
+    max-height: 60vh;
+    padding: 10px;
+}
+
+.cert-item {
+    cursor: pointer;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    background: var(--bg-primary);
+    text-align: center;
+}
+
+.cert-item:hover {
+    border-color: var(--accent);
+    transform: scale(1.05);
+}
+
+.cert-item img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+.cert-item span {
+    display: block;
+    padding: 8px;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+/* Modal de Imagen Grande */
+.image-viewer-modal {
+    background-color: rgba(0, 0, 0, 0.95);
+    flex-direction: column;
+}
+
+.full-image {
+    max-width: 90%;
+    max-height: 80vh;
+    border: 2px solid var(--accent);
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+}
+
+.close-lightbox {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.close-lightbox:hover { color: var(--accent); }
+
+.modal-footer {
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+    border-top: 1px solid var(--border);
+    padding-top: 10px;
+}
+
+.close-btn-secondary {
+    background: var(--border);
+    color: var(--text-primary);
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.close-btn-secondary:hover {
+    background: var(--text-secondary);
+    color: var(--bg-primary);
+}
+
+/* RESPONSIVE: En móviles se pone uno debajo del otro */
+@media (max-width: 900px) {
+    .about-split-container {
+        grid-template-columns: 1fr; /* Una sola columna */
+        gap: 2rem;
+    }
+
+    .about-text-column {
+        text-align: left; /* Opcional: en móvil a veces justificado se ve raro, pero puedes dejarlo */
+    }
+    
+    .section-title-left {
+        text-align: center; /* Título centrado en móvil */
+        display: block;
+    }
+    
+    .section-title-left::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* TECNOLOGIAS */
 .skills {
     display: flex;
     flex-wrap: wrap;

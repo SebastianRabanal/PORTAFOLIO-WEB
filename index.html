@@ -70,10 +70,9 @@
                                 <span class="tech-tag">JavaScript</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://github.com/SebastianRabanal/Hackaton---Dashboard-Datos-Clima-" target="_blank" class="project-link"><i class="fab fa-github"></i> Code</a>
+                                <a href="https://github.com/SebastianRabanal/Hackaton---Dashboard-Datos-Clima-" target="_blank" class="project-link"><i class="fab fa-github"></i> CODE</a>
                                 <a href="https://hackaton-dashboard-datos-clima.onrender.com/" class="project-link demo-btn" target="_blank">
-                                <i class="fas fa-external-link-alt"></i> DEMO
-                                </a>
+                                <i class="fas fa-external-link-alt"></i> VER AQUI</a>
                             </div>
                         </div>
                     </div>
@@ -94,16 +93,19 @@
                     </div>
 
                     <div class="project-card">
-                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop" alt="Proyecto 3" class="project-image">
+                        <img src="images/image portada - portafolio.jpeg" alt="Proyecto 3" class="project-image">
                         <div class="project-content">
                             <h3 class="project-title">Portafolio</h3>
-                            <p class="project-description">Diseño minimalista y responsive.</p>
+                            <p class="project-description">Sitio web UX-UI, responsive, donde se pueden ver mis proyectos y ademas informacion basica.</p>
                             <div class="tech-tags">
-                                <span class="tech-tag">CSS</span>
                                 <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
                             </div>
                             <div class="project-links">
-                                <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                                <a href="https://github.com/SebastianRabanal/PORTAFOLIO-WEB" class="project-link"><i class="fab fa-github"></i> CODE</a>
+                                <a href="https://sebastianrabanal.github.io/PORTAFOLIO-WEB" class="project-link demo-btn" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>VER AQUI</a>
                             </div>
                         </div>
                     </div>
@@ -131,13 +133,95 @@
     </section>
 
     <section id="sobre-mi" class="about">
-        <h2 class="section-title">Sobre Mí</h2>
-        <p>Soy un desarrollador apasionado por la tecnología y el aprendizaje continuo. Aunque actualmente estoy
-            iniciando mi carrera profesional, dedico mi tiempo a crear proyectos que me permiten explorar nuevas
-            tecnologías y mejorar mis habilidades.</p>
-        <p>Me enfoco en escribir código limpio, crear interfaces intuitivas y aprender de cada proyecto que desarrollo.
-        </p>
-    </section>
+            <div class="about-split-container">
+
+                <div class="about-text-column">
+                    <h2 class="section-title-left">Sobre Mí</h2>
+                    <div class="bio-text">
+                        <p>
+                            Soy un desarrollador apasionado por la tecnología y el aprendizaje continuo. 
+                            Aunque actualmente estoy iniciando mi carrera profesional, dedico mi tiempo a 
+                            crear proyectos que me permiten explorar nuevas tecnologías y mejorar mis habilidades.
+                        </p>
+                        <p>
+                            Me enfoco en escribir código limpio, crear interfaces intuitivas y aprender de cada 
+                            proyecto que desarrollo. Busco aportar valor mediante soluciones eficientes y escalables.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="about-actions-column">
+                    <div class="actions-card">
+                        <h3>Documentación</h3>
+                        <p class="card-subtitle">Recursos profesionales</p>
+
+                        <div class="action-buttons-vertical">
+                            <button class="action-btn full-width" onclick="openModal('modalCV')">
+                                <div class="btn-icon"><i class="fas fa-file-pdf"></i></div>
+                                <div class="btn-text">
+                                    <span>Ver Curriculum</span>
+                                    <small>Formato PDF</small>
+                                </div>
+                                <i class="fas fa-arrow-right arrow-indicator"></i>
+                            </button>
+
+                            <button class="action-btn full-width" onclick="openModal('modalCerts')">
+                                <div class="btn-icon"><i class="fas fa-certificate"></i></div>
+                                <div class="btn-text">
+                                    <span>Certificaciones</span>
+                                    <small>Galería de logros</small>
+                                </div>
+                                <i class="fas fa-arrow-right arrow-indicator"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <div id="modalCV" class="modal">
+            <div class="modal-content cv-container">
+                <div class="modal-header">
+                    <h3>Mi Curriculum</h3>
+                    <button class="close-modal" onclick="closeModal('modalCV')">&times;</button>
+                </div>
+                <iframe src="docs/cv_sebastian.pdf" class="pdf-viewer"></iframe>
+                <div class="modal-footer">
+                    <button class="close-btn-secondary" onclick="closeModal('modalCV')">Regresar</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="modalCerts" class="modal">
+            <div class="modal-content certs-container">
+                <div class="modal-header">
+                    <h3>Mis Certificaciones</h3>
+                    <button class="close-modal" onclick="closeModal('modalCerts')">&times;</button>
+                </div>
+
+                <div class="certs-grid">
+                    <div class="cert-item" onclick="openImage('images/certificado1.jpg', 'Curso Python Avanzado')">
+                        <img src="images/certificado1.jpg" alt="Certificado 1">
+                        <span>Python Avanzado</span>
+                    </div>
+                    <div class="cert-item" onclick="openImage('images/certificado2.jpg', 'SQL Server Database')">
+                        <img src="images/certificado2.jpg" alt="Certificado 2">
+                        <span>SQL Server</span>
+                    </div>
+                    </div>
+
+                <div class="modal-footer">
+                    <button class="close-btn-secondary" onclick="closeModal('modalCerts')">Regresar</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="modalImageViewer" class="modal image-viewer-modal">
+            <span class="close-lightbox" onclick="closeModal('modalImageViewer')">&times;</span>
+            <img id="fullImage" class="full-image" src="" alt="Certificado Completo">
+            <p id="imageCaption" class="image-caption"></p>
+        </div>
 
     <section id="tecnologias" class="technologies">
         <h2 class="section-title" id="Tecnologias">Tecnologias</h2>
