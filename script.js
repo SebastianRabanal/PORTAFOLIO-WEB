@@ -298,3 +298,13 @@ window.addEventListener('keydown', function(event) {
         });
     }
 });
+
+// =========================================
+// 7. AÑO AUTOMÁTICO EN EL FOOTER
+// =========================================
+document.addEventListener('DOMContentLoaded', function() {
+    const yearSpan = document.getElementById('current-Year');
+    if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+    }
+});
