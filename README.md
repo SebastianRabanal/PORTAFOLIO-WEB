@@ -94,7 +94,7 @@ Este no es solo un sitio estático, incluye lógica avanzada en **JavaScript Van
 
 
 <div align="center">
-  <img src="images/capture-images-project/4apture.png" alt="Vista Previa Tecnologias" width="800">
+  <img src="images/capture-images-project/4capture.png" alt="Vista Previa Tecnologias" width="800">
   <p><em>Vista previa de la pantalla de Tecnologias</em></p>
 </div>
 
