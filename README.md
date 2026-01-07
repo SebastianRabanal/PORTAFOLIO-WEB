@@ -76,39 +76,34 @@ Este no es solo un sitio estático, incluye lógica avanzada en **JavaScript Van
 ## 📸 Capturas de Pantalla
 
 <div align="center">
-  <img src="images/capture-images-project/1capture.png" alt="Vista Previa" width="800">
+  <img src="images/capture-images-project/1capture.png" alt="Vista Previa Incio" width="800">
   <p><em>Vista previa de la pantalla de inicio</em></p>
 </div>
 
-![Vista Previa Patalla de Inicio](images/capture-images-project/1capture.png)
 
 <div align="center">
-  <img src="images/capture-images-project/2capture.png" alt="Vista Previa" width="800">
+  <img src="images/capture-images-project/2capture.png" alt="Vista Previa de Proyectos" width="800">
   <p><em>Vista previa de la pantalla de Mis Proyectos</em></p>
 </div>
 
-![Vista Previa Patalla de Proyectos](images/capture-images-project/2capture.png)
 
 <div align="center">
-  <img src="images/capture-images-project/3capture.png" alt="Vista Previa" width="800">
+  <img src="images/capture-images-project/3capture.png" alt="Vista Previa Sobre Mi" width="800">
   <p><em>Vista previa de la pantalla de Sobre Mi</em></p>
 </div>
 
-![Vista Previa Patalla de Sobre Mi](images/capture-images-project/3capture.png)
 
 <div align="center">
-  <img src="images/capture-images-project/14apture.png" alt="Vista Previa" width="800">
+  <img src="images/capture-images-project/4apture.png" alt="Vista Previa Tecnologias" width="800">
   <p><em>Vista previa de la pantalla de Tecnologias</em></p>
 </div>
 
-![Vista Previa Patalla de Tecnologias](images/capture-images-project/4capture.png)
 
 <div align="center">
-  <img src="images/capture-images-project/5capture.png" alt="Vista Previa" width="800">
+  <img src="images/capture-images-project/5capture.png" alt="Vista Previa Contact Me" width="800">
   <p><em>Vista previa de la pantalla de Contact Me</em></p>
 </div>
 
-![Vista Previa Patalla de Contact me](images/capture-images-project/5capture.png)
 
 ---
 
