@@ -70,7 +70,7 @@ Este no es solo un sitio estático, incluye lógica avanzada en **JavaScript Van
 ├── 📁 docs/            # Archivos PDF (CV)
 ├── 📁 certificados/    # Imágenes de certificaciones
 └── index.html          # Estructura principal
-
+```
 ---
 
 ## 📸 Capturas de Pantalla
