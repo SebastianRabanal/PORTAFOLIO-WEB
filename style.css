@@ -244,6 +244,18 @@ nav {
         flex: 0 0 100%;
         min-width: 100%;
     }
+    .nav-links li{ 
+        width: 100%;
+    }
+    .nav-links a{
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+        text-align: left;
+    }
+    .nav-links a:hover, .nav-links a:active {
+        background-color: rgba(6, 233, 127, 0.422);
+    }
 }
 
 .project-card:hover {
@@ -327,7 +339,7 @@ nav {
 .about {
     /* Quitamos el text-align center global de la sección anterior */
     text-align: left; 
-    padding-top: 60px;
+    padding-top: 30px;
     padding-bottom: 60px;
     max-width: 1200px; /* Aumentamos el ancho para que quepan las 2 columnas */
     margin: 0 auto;
@@ -697,6 +709,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .hero{
+        padding-top: 100px;
+        align-items: flex-start;
+    }
     .menu-toggle {
         display: block;
     }
