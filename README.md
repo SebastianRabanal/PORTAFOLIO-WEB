@@ -32,7 +32,7 @@ El diseño sigue una estética **Dark Neon** (`#00ff88`) enfocada en la experien
 
 ### 🌐 Demo en Vivo
 Puedes ver el portafolio funcionando aquí:  
-👉 **[Enlace a tu GitHub Pages o Dominio]** *(Configura esto en los ajustes de tu repo)*
+👉 https://sebastianrabanal.github.io/PORTAFOLIO-WEB
 
 ---
 
@@ -66,7 +66,7 @@ Este no es solo un sitio estático, incluye lógica avanzada en **JavaScript Van
 │   └── style.css       # Estilos principales y diseño responsivo
 ├── 📁 js/
 │   └── script.js       # Lógica de sliders, modales y menú
-├── 📁 images/          # Recursos gráficos y capturas de proyectos
+├── 📁 images/capture-images-project/          # Recursos gráficos y capturas de proyectos
 ├── 📁 docs/            # Archivos PDF (CV)
 ├── 📁 certificados/    # Imágenes de certificaciones
 └── index.html          # Estructura principal
@@ -76,15 +76,39 @@ Este no es solo un sitio estático, incluye lógica avanzada en **JavaScript Van
 ## 📸 Capturas de Pantalla
 
 <div align="center">
-  <img src="images/preview-portafolio.png" alt="Vista Previa" width="800">
+  <img src="images/capture-images-project/1capture.png" alt="Vista Previa" width="800">
   <p><em>Vista previa de la pantalla de inicio</em></p>
 </div>
 
-![Vista Previa Patalla de Inicio](images/1capture.png)
-![Vista Previa Patalla de Proyectos](images/2capture.png)
-![Vista Previa Patalla de Sobre Mi](images/3capture.png)
-![Vista Previa Patalla de Tecnologias](images/4capture.png)
-![Vista Previa Patalla de Contact me](images/5capture.png)
+![Vista Previa Patalla de Inicio](images/capture-images-project/1capture.png)
+
+<div align="center">
+  <img src="images/capture-images-project/2capture.png" alt="Vista Previa" width="800">
+  <p><em>Vista previa de la pantalla de Mis Proyectos</em></p>
+</div>
+
+![Vista Previa Patalla de Proyectos](images/capture-images-project/2capture.png)
+
+<div align="center">
+  <img src="images/capture-images-project/3capture.png" alt="Vista Previa" width="800">
+  <p><em>Vista previa de la pantalla de Sobre Mi</em></p>
+</div>
+
+![Vista Previa Patalla de Sobre Mi](images/capture-images-project/3capture.png)
+
+<div align="center">
+  <img src="images/capture-images-project/14apture.png" alt="Vista Previa" width="800">
+  <p><em>Vista previa de la pantalla de Tecnologias</em></p>
+</div>
+
+![Vista Previa Patalla de Tecnologias](images/capture-images-project/4capture.png)
+
+<div align="center">
+  <img src="images/capture-images-project/5capture.png" alt="Vista Previa" width="800">
+  <p><em>Vista previa de la pantalla de Contact Me</em></p>
+</div>
+
+![Vista Previa Patalla de Contact me](images/capture-images-project/5capture.png)
 
 ---
 
@@ -111,4 +135,4 @@ Sebastian Rabanal
 
 🔗 LinkedIn
 
-<div align="center"> <p>Desarrollado con pasión y café ☕ por <a href="https://sebastianrabanal.github.io/PORTAFOLIO-WEB">Sebastian_Dev</a></p> <p>&copy; 2025</p> </div>
+<div align="center"> <p>Desarrollado con pasión y café ☕ por <a href="https://sebastianrabanal.github.io/PORTAFOLIO-WEB">Sebastian_Dev</a></p> <p>&copy; 2026</p> </div>
